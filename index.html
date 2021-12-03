@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Jaroslav Ju-Folio</title>
+    <link rel="stylesheet" href="css/chief-slider.css">
+    <script src="js/chief-slider.js"></script>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div class="wrapper">
@@ -62,6 +65,33 @@
             </section>
         </header>
         <main>
+            <div>
+                <div class="slider">
+                    <div class="slider__container">
+                      <div class="slider__wrapper">
+                        <div class="slider__items">
+                          <div class="slider__item">
+                            <img src="https://via.placeholder.com/320x210px/0000FF/" alt="">
+                          </div>
+                          <div class="slider__item">
+                            <img src="https://via.placeholder.com/320x210px/FF0000/" alt="">
+                          </div>
+                          <div class="slider__item">
+                            <img src="https://via.placeholder.com/320x210px/FFFF00/" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                    <ol class="slider__indicators">
+                        <li data-slide-to="0"></li>
+                        <li data-slide-to="1"></li>
+                        <li data-slide-to="2"></li>
+                      </ol>
+                  </div>
+            </div>
         </main>
         <footer  id="test">
             <div class="footer"></div>
@@ -72,6 +102,7 @@
         </footer>
         
     </div>
+    
     <!-- Jquery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- IBG / Menu Burger / Scroll-to -->
