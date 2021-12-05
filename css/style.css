@@ -194,7 +194,7 @@ footer {
 .button form {
     margin-right: 10px;
 }
-.header_main button {
+.header_main .button_item {
     width: 200px;
     height: 45px;
     margin: 10px 0;
@@ -206,7 +206,7 @@ footer {
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 400;
 }
-.header_main button:hover{
+.header_main .button_item:hover{
     background-color: #ef5552;
 }
 .header_main div:nth-child(2) {
