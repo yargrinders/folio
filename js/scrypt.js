@@ -35,3 +35,13 @@ for (let anchor of anchors) {
     })
   })
 }
+
+$(document).ready(function(){
+  $('.your-class').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1200,
+    adaptiveHeight: true,
+    dots: true
+  });
+});

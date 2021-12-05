@@ -211,7 +211,6 @@ footer {
 }
 .header_main div:nth-child(2) {
     flex-basis: 50%;
-    height: 410px;
     min-width: 0;
 }
 .header_footer span {
@@ -354,3 +353,19 @@ footer {
     }
 }
 /* MAIN */
+main ._container {
+    height: 400px;
+}
+.slider_left {
+    width: 320px;
+}
+.slick_body {
+    text-align: center;
+    border: blueviolet 1px dashed;
+    margin: 0 10px;
+    text-align: center;
+}
+.your-class .slick_body img {
+    margin: 0 auto;
+    border-radius: 50%;
+  }
