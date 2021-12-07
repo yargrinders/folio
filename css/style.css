@@ -210,8 +210,14 @@ footer {
     background-color: #ef5552;
 }
 .header_main div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: 50%;
     min-width: 0;
+}
+.header_main div:nth-child(2) img {
+    border-radius: 50%;
 }
 .header_footer span {
     font-weight: 700;
