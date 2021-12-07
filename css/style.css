@@ -355,11 +355,11 @@ footer {
     }
 }
 /* MAIN */
+main {
+    background-color: #ef5552;
+}
 main ._container {
     height: 400px;
-}
-.slider_left {
-    width: 320px;
 }
 .slick_body {
     text-align: center;
