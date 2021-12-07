@@ -171,6 +171,9 @@ footer {
         flex-direction: column;
         margin-bottom: 15px;
         text-align: center;
+    }
+    .header_main div:nth-child(2) {
+        order: -1;
     }    
 }
 .header_main div:nth-child(1) h1 {
