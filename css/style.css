@@ -403,12 +403,12 @@ footer h2::before {
 .footer_card__item div:nth-child(2) {
     flex-basis: 50%;
 }
-.footer_card__item span:nth-child():after {
-    content: " ";
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    display: block;
-    width: 90%;
+.footer_card__text span:nth-child(1) {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer_card__text span:nth-child(3) {
+    font-weight: 100;
 }
 @media (max-width: 840px) {
     .footer_card {
