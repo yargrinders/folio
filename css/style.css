@@ -75,7 +75,7 @@ header {
 }
 /* END IBG */
 /* TOP */
-.top {
+.top_line {
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -84,16 +84,16 @@ header {
     padding: 0 100px;
 }
 @media (max-width: 1170px) {
-    .top {
+    .top_line {
         padding: 0 10px;
     }
 }
 @media (max-width: 320px) {
-    .top {
+    .top_line {
         flex-direction: column;
         justify-content: center;
     }
-    .top h2 {
+    .top_line h2 {
         margin: 5px;
     }
 }
@@ -216,7 +216,7 @@ header {
     min-width: 0;
 }
 .header_main div:nth-child(2) img {
-    border-radius: 50%;
+    width: 90%;
 }
 .header_footer span {
     font-weight: 700;
@@ -355,7 +355,7 @@ header {
     .header__link {
         font-size: 24px;
     }
-    .top > h2:nth-child(2) {
+    .top_line > h2:nth-child(2) {
         display: none;
     }
 }
@@ -368,7 +368,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
+    background-image: url('../img/memphis-mini.png');
+    background-position: center center;
+    background-size: cover;
     background-color: var(--c-red);
+    box-shadow: 0px 15px 9px 0px rgba(239, 85, 82, 0.2) inset;
 }
 footer ._container {
     width: 100%;
@@ -402,18 +406,16 @@ footer h2::before {
 }
 .footer_card__text {
     width: 100%;
-    padding: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .footer_card__text div:nth-child(1),
 .footer_card__text div:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    width: 100%;
     height: 100%;
 }
 .footer_card__text div span {
@@ -423,16 +425,17 @@ footer h2::before {
 .footer_card__text div p {
     font-weight: 400;
 }
-.footer_card__text div:nth-child(1) p::before,
-.footer_card__text div:nth-child(2) p::before {
-    content: '';
-    display: block;
-    position: relative;
-    top: -17px;
-    border: 1px var(--c-red) solid;
-    width: 100%;
+.footer_card__text div span::after, 
+.footer_card__text div span::before {
+    content: "/";
+    color: var(--c-red);
+    font-size: 16px;
+    margin: 5px;
 }
 @media (max-width: 840px) {
+    footer {
+        padding: 0;
+    }
     .footer_card {
         flex-direction: column;
     }
@@ -441,4 +444,20 @@ footer h2::before {
     flex-basis: 50%;
     padding: 10px;
     text-align: center;
+}
+.footer_astronaut img {
+    width: 90%;
+}
+.bottom_line {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c-white-2);    
+    padding: 0 100px;
+}
+@media (max-width: 1170px) {
+    .bottom_line {
+        padding: 0 10px;
+    }
 }
