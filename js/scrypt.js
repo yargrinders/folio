@@ -35,3 +35,11 @@ for (let anchor of anchors) {
     })
   })
 }
+
+$(".center").slick({
+  dots: true,
+  infinite: true,
+  centerMode: true,
+  slidesToShow: 5,
+  slidesToScroll: 3
+});
