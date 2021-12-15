@@ -41,16 +41,17 @@ $(document).ready(function(){
       arrows:true,
       dots:true,
       adaptiveHeight:false,
+      infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay:true,
-      autoplaySpeed:3500,
+      autoplaySpeed:1500,
       responsive: [
           {
             breakpoint: 1170,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               infinite: true,
               dots: true,
               arrows:true
