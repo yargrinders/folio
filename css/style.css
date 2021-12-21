@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --c-white-1: #ffffff;
+    --c-white-2: #f8f8f8;
+    --c-red: #ef5552;
+    --c-black: #000000;
+}
 *,*::before,*::after {
     padding: 0;
     margin: 0;
@@ -37,12 +43,6 @@ body {
 }
 body {
     margin: 0;
-}
-:root {
-    --c-white-1: #ffffff;
-    --c-white-2: #f8f8f8;
-    --c-red: #ef5552;
-    --c-black: #000000;
 }
 .wrapper {
     overflow: hidden;
@@ -243,6 +243,9 @@ header {
     display: flex;
     flex-direction: column;
 }
+.social {
+    display: none;
+}
 /* END HEADER */
 /* Burger */
 .header__top {
@@ -274,11 +277,10 @@ header {
 }
 .header__list li::after {
     content: '/';
-    color: var(--c-white-2);
+    color: var(--c-red);
     font-weight: 300;
     position: relative;
 }
-
 @media (max-width: 767px) {
     body.lock {
         overflow: hidden;
@@ -356,6 +358,9 @@ header {
     }
     .header__list li {
         margin: 0px 0px 20px 0px;
+    }
+    .header__list li::after {
+        color: var(--c-white-2);
     }
     .header__link {
         font-size: 24px;
